@@ -1,0 +1,138 @@
+
+/* for the main body of the app */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Quiz app's Container */
+  .quiz {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .quiz h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* For the Questions */
+  .quiz h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* For the Options */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  li:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+  }
+  
+  .selected {
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid #fff;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Next Button */
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #2575fc;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #1c4cae;
+    transform: translateY(-3px);
+  }
+  
+  button:disabled {
+    background: rgba(255, 255, 255, 0.3);
+    cursor: not-allowed;
+  }
+  
+  /* Score Page */
+  .scorePage {
+    text-align: center;
+  }
+  
+  .scorePage h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00ffcc;
+  }
+  
+  .scorePage h3 {
+    font-size: 1.5rem;
+    color: #ffecb3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .quiz {
+      padding: 15px 20px;
+    }
+  
+    .quiz h1 {
+      font-size: 1.8rem;
+    }
+  
+    .quiz h3 {
+      font-size: 1rem;
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
